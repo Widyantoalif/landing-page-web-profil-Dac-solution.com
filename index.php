@@ -60,6 +60,8 @@
 
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+  <link href="lib/icomoon/style.css" rel="stylesheet">
+
 
 
   <!-- Main Stylesheet File -->
@@ -110,9 +112,23 @@
 
           <li><a href="#tentang">Tentang</a></li>
 
+          <li class="has-children">
+
+            <a class="nav-link" href="#why-us">Produk <i class="fa fa-chevron-down d-xl-inline-block d-lg-inline-block d-md-inline-block d-none"></i></a>
+
+            <ul class="dropdown shadow">
+
+              <li class="mt-2"><a href="#amsdac" class="nav-link">AMSDAC</a></li>
+
+              <li class="mb-2"><a href="#mtag" class="nav-link">mTag</a></li>
+
+            </ul>
+
+          </li>
+
           <li><a href="#client">Klien</a></li>
 
-          <li><a href="#contact">Kontak</a></li>
+          <li><a href="#kontak">Kontak</a></li>
 
         </ul>
 
@@ -256,7 +272,7 @@
 
               <h4 class="title"><a href="">Data Warehousing and Business Intelligence</a></h4>
 
-              <p class="description" style="text-align: justify;">DAC memiliki sumberdaya yang mampu untuk memberikan
+              <p class="description" style="text-align: justify; ">DAC memiliki sumberdaya yang mampu untuk memberikan
 
                 analisis, desain dan implementasi datawarehouse, datamart
 
@@ -447,6 +463,17 @@
     <section id="why-us" class="why-us section-bg">
 
       <div class="container" data-aos="fade-up">
+        <div class="section-title mb-5" data-aos="fade-up">
+
+          <!-- <h2>Produk kami</h2> -->
+
+          <p>Produk Kami</p>
+
+          <h7>Aplikasi yang siap untuk digunakan dan diintegrasikan ke sistem yang telah ada</h7>
+
+        </div>
+
+
 
 
 
@@ -456,12 +483,8 @@
 
             <div class="content">
 
-              <h1 style="font-weight: 500;">AMSDAC</h1>
-
-              <h4 class="mt-5" style="font-weight: 500;">Pendahuluan</h4>
-
+              <h2 style="font-weight: 500;">AMSDAC</h2>
               <h6>
-
                 Untuk sebuah perusahaan yang baik, diperlukan membuat perbaikan secara eksternal maupun internal.
 
                 Sebagai contoh adalah efisiensi proses kerja internal, identifikasi faktor kunci kemajuan dari pekerja,
@@ -515,9 +538,35 @@
 
 
       </div>
+      <div class="container">
+        <section id="mtag"></section>
+        <hr style="margin-top:100px;">
+      </div>
+      <div class="container mt-5" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-5 img" style='background-image: url("img/mobile-tagging.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-7">
+            <div class="content">
+              <h2 style="font-weight: 500;">mTag</h2>
+
+              <h6 style="font-family: sans-serif;">
+
+                Mobile tangging adalah alat pengumpulan data seluler yang memungkinkan organisasi mengumpulkan data secara real-time
+                menggunakan ponsel Android alih-alih memakan waktu survei berbasis kertas.<br><br>
+
+
+              </h6>
+
+              <div class="submit-btn wow fadeInUp mt-5" data-wow-duration="1s" data-wow-delay=".7s">
+
+                <a href="mTag.php" class="btn btn-read-more">Baca Selengkapnya</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
     </section><!-- End Why Us Section -->
-
 
 
     <section id="client" class="clients section-bg">
@@ -581,10 +630,10 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-
+          <section id="kontak"></section>
           <!-- <h2>Klien kami</h2> -->
 
-          <p>kontak kami</p>
+          <p>Kontak Kami</p>
 
           <h7>Jika ingin menghubungi Kami, maka berikut beberapa informasi kontak dari Kami yang dapat dihubungi.</h7>
 
@@ -604,7 +653,7 @@
 
                     <div class="single-input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
 
-                      <input type="text" name="nama" placeholder="Nama">
+                      <input type="text" name="nama" placeholder="Nama" required>
 
                     </div>
 
@@ -634,7 +683,7 @@
 
                     <div class="single-input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
 
-                      <textarea name="pesan" id="" cols="30" placeholder="Pesan" rows="10"></textarea>
+                      <textarea name="pesan" id="" cols="30" placeholder="Pesan" rows="10" required></textarea>
 
                     </div>
 
